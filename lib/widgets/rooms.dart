@@ -27,6 +27,8 @@ class Rooms extends StatelessWidget {
             );
           } else {
             final User user = onlineUsers[index - 1];
+            print(
+                "Index = $index , user : ${user.name} ||  total users ${onlineUsers.length}");
             return Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: ProfileAvatar(
